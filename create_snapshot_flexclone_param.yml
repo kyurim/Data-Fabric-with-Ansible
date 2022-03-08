@@ -1,0 +1,18 @@
+---
+
+#snapshot and flexclone parameters
+
+# new snapshot info
+
+snapshot_name: snapshot_01
+parent_volume: ans_demo_vol1
+vserver_name: ans_demo_2
+username: admin
+password: NetApp0118!
+hostname: 115.144.174.85
+
+# flexclone info
+# flexclone is created based on the above snapshot
+
+clone_name: demo_clone_01
+

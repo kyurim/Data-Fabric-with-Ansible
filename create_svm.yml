@@ -1,0 +1,70 @@
+---
+ - hosts: localhost
+   collections: 
+   - netapp.ontap
+   gather_facts: false
+   vars:
+    vserver: ans_demo_2
+    aggr: OTScluster1_01_SSD_1     #aggr where new SVM will be created
+    home_port: e0a                 #port where new LIF for SVM will be created
+    home_node: OTScluster1-01      #node where new SVM  LIF will be created
+    address : 115.144.174.92             #SVM LIF address
+    
+   #login information to the host
+    login: &login
+     hostname: 115.144.174.85
+     username: admin
+     password: NetApp0118!
+     https: true
+     validate_certs: false
+   
+   name: New SVM
+
+   tasks:
+   - name: Create SVM
+     na_ontap_svm:
+      state: present
+      name: "{{ vserver}}"
+      root_volume: "{{ vserver}}_root"
+      root_volume_aggregate: "{{ aggr }}"
+      root_volume_security_style: mixed
+      <<: *login
+  
+   - name: Create Interface
+     na_ontap_interface:
+      state: present
+      interface_name: "{{ vserver }}_data"
+      home_port: "{{ home_port }}"
+      home_node: "{{ home_node }}"
+      role: data
+      admin_status: up
+      is_auto_revert: true
+      address: "{{ address }}"
+      netmask: 255.255.255.0
+      vserver: "{{ vserver }}"
+      <<: *login
+
+   - name: change nfs status
+     na_ontap_nfs:
+      state: present
+      service_state: started
+      vserver: "{{ vserver }}"
+      nfsv3: enabled
+      nfsv4: enabled
+      nfsv41: enabled
+      tcp: enabled
+      udp: enabled
+      vstorage_state: disabled
+      <<: *login
+   - name: setup default rules
+     na_ontap_export_policy_rule:
+      state: present
+      policy_name: default
+      vserver: "{{ vserver }}"
+      client_match: 0.0.0.0/0
+      ro_rule: any
+      rw_rule: any
+      super_user_security: none
+      <<: *login
+
+

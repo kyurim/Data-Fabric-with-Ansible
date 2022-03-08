@@ -1,0 +1,38 @@
+---
+
+# Add information to create new VM 
+
+# vSphere and ESXi host information
+
+vcenter_hostname: 115.144.174.83       #vSphere hostname
+username: administrator@vsphere.local #vSphere username
+password: NetApp0118!                 #vSphere Password
+folder: /                             #folder where new VM exists
+datastore: pcs-demo-ds                #datastore that new VM will use
+template: ansible_template            #VM template applied
+datacenter: Datacenter1               #datacenter to add the new VM
+esxi_hostname: 115.144.174.82         #esxi hostname where new VM exists
+guest_id: centos7_64Guest             #guest_id. This time centos7 64 bi
+
+# Network parameters
+
+network_name: Ansible network         #name of the VM network
+ip_address: 115.144.174.73
+netmask: 255.255.255.0
+gateway: 115.144.174.1
+dns_servers: 115.144.174.130
+
+# Hardware param
+
+memory_size: 16000                    #memory size in mb
+num_cpus: 2                            #number of cpus
+
+# Disk param
+
+disk_size: 30                         #disk size in gb
+
+# New VM Names
+
+servers:                              #list of new VM to create. Multiple VMs can be created.
+ - New_VM_02
+

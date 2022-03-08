@@ -1,0 +1,32 @@
+---
+
+- hosts: localhost
+  gather_facts: false
+  collections:
+  - netapp.ontap
+ 
+  vars:
+   hostname: 115.144.174.85
+   username: admin
+   password: NetApp0118!
+   aggr: OTScluster1_01_SSD_1
+   vserver: ans_demo_2
+   vol_name: ans_demo_vol1
+
+  tasks:
+  - name: Create FlexVol
+    na_ontap_volume:
+     state: present
+     name: "{{ vol_name }}"
+     vserver: "{{ vserver }}"
+     aggregate_name: "{{ aggr }}"
+     size: 10
+     size_unit: gb
+     policy: default
+     junction_path: "/{{ vol_name }}"
+     hostname: "{{ hostname }}"
+     username: "{{ username }}"
+     password: "{{ password }}"
+     space_guarantee: none
+     https: true
+     validate_certs: false

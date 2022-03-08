@@ -1,0 +1,17 @@
+---
+
+#vserver information
+
+vserver: svm03
+aggregate: OTScluster1_01_SSD_1
+home_port: e0a
+home_node: OTScluster1-01
+address: 115.144.174.88
+
+#login information to the cluster
+
+hostname: 115.144.174.85
+username: admin
+password: NetApp0118!
+
+
