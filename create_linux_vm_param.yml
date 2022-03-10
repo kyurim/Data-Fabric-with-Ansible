@@ -5,9 +5,9 @@
 # vSphere and ESXi host information
 
 vcenter_hostname: 115.144.174.83       #vSphere hostname
-username: administrator@vsphere.local #vSphere username
-password: NetApp0118!                 #vSphere Password
-folder: /                             #folder where new VM exists
+#username:
+#password:	                      #vSphere Password
+folder: /SY-KR                             #folder where new VM exists
 datastore: pcs-demo-ds                #datastore that new VM will use
 template: ansible_template            #VM template applied
 datacenter: Datacenter1               #datacenter to add the new VM

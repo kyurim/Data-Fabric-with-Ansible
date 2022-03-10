@@ -7,8 +7,8 @@
 snapshot_name: snapshot_01
 parent_volume: ans_demo_vol1
 vserver_name: ans_demo_2
-username: admin
-password: NetApp0118!
+#username:
+#password:
 hostname: 115.144.174.85
 
 # flexclone info

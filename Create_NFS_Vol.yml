@@ -7,8 +7,8 @@
  
   vars:
    hostname: 115.144.174.85
-   username: admin
-   password: NetApp0118!
+   #username: 
+   #password: 
    aggr: OTScluster1_01_SSD_1
    vserver: ans_demo_2
    vol_name: ans_demo_vol1

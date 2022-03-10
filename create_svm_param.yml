@@ -11,7 +11,7 @@ address: 115.144.174.88
 #login information to the cluster
 
 hostname: 115.144.174.85
-username: admin
-password: NetApp0118!
+#username:
+#password: 
 
 
