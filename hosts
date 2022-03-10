@@ -15,7 +15,7 @@
 
 
 [control]
-ansible ansible_host=115.144.174.76
+ansible localhost=115.144.174.76
 
 #[control:vars]
 #ansible_python_interpreter=/usr/bin/python3
