@@ -14,7 +14,7 @@
 115.144.174.85 ansible_ssh_user=admin #ansible_ssh_pass ontap select cluster
 
 [control]
-ansible ansible_host=115.144.174.72
+ansible ansible_host=115.144.174.75
 
 [autoVM]
 #115.144.174.94 ansible_ssh_user=root 
