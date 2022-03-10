@@ -3,7 +3,7 @@
    collections: 
    - netapp.ontap
    gather_facts: false
-   vars:2
+   vars:
     #OTScluster1_01_SSD_1     #aggr where new SVM will be created
     #home_port: e0a                 #port where new LIF for SVM will be created
     #home_node: OTScluster1-01      #node where new SVM  LIF will be created
