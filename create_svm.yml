@@ -1,5 +1,5 @@
 ---
- - hosts: localhost
+ - hosts: ansible
    collections: 
    - netapp.ontap
    gather_facts: false
