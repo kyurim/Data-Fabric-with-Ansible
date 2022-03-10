@@ -13,11 +13,12 @@
 [ontap]
 115.144.174.85 ansible_ssh_user=admin #ansible_ssh_pass ontap select cluster
 
-[ontap:vars]
-ansible_python_interpreter=/usr/bin/python3
 
 [control]
 ansible ansible_host=115.144.174.75
+
+[control:vars]
+ansible_python_interpreter=/usr/bin/python3
 
 [autoVM]
 #115.144.174.94 ansible_ssh_user=root 
