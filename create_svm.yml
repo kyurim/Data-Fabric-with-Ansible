@@ -12,8 +12,8 @@
    #login information to the host
     login: &login
      hostname: 115.144.174.85
-     username: {{ username }}
-     password: {{ password }}
+     username: "{{ username }}"
+     password: "{{ password }}"
      https: true
      validate_certs: false
    
