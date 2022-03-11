@@ -27,6 +27,7 @@
        netmask: "{{ netmask }}"
        gateway: "{{ gateway }}"
        dns_servers: "{{ dns_servers }}"
+       start_connected: yes
      hardware:
        memory_mb: "{{ memory_size }}"
        num_cpus: "{{ num_cpus }}"
