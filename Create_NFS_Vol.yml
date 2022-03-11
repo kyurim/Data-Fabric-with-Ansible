@@ -1,17 +1,17 @@
 ---
 
-- hosts: localhost
+- hosts: ansible
   gather_facts: false
   collections:
   - netapp.ontap
  
   vars:
-   hostname: 115.144.174.85
+   #hostname: 115.144.174.85
    #username: 
    #password: 
-   aggr: OTScluster1_01_SSD_1
-   vserver: ans_demo_2
-   vol_name: ans_demo_vol1
+   #aggr: OTScluster1_01_SSD_1
+   #vserver: ans_demo_2
+   #vol_name: ans_demo_vol1
 
   tasks:
   - name: Create FlexVol
