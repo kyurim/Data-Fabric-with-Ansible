@@ -1,12 +1,9 @@
 ---
 
 - name: ontap
-  hosts: localhost
+  hosts: ansible
   gather_facts: no
   connection: local
-
-  vars_files:
-   create_linux_vm_param.yml
 
   tasks:
   - name: create linux VM
