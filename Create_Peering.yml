@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: 115.144.174.76
   connection: local
 
   gather_facts: false
@@ -12,12 +12,12 @@
     dest_cluster_name: "{{ dest_cluster_name }}"
     source_intercluster_lif: "{{ source_intercluster_lif }}"
     dest_intercluster_lif: "{{ dest_intercluster_lif }}"
-    
+
   name: cluster&SVM peering
 
   tasks:
   - name: Create cluster peer
-    netapp.ontap.na_ontap_cluster_peer:
+    na_ontap_cluster_peer:
       state: present
       source_intercluster_lif: "{{ source_intercluster_lif }}"
       dest_intercluster_lif: "{{ dest_intercluster_lif }}"
@@ -32,7 +32,7 @@
       dest_hostname: "{{ dest_hostname }}"
       
   - name: Source vserver peer create
-    netapp.ontap.na_ontap_vserver_peer:
+    na_ontap_vserver_peer:
       state: present
       peer_vserver: "{{ peer_vserver }}"
       peer_cluster: "{{ peer_cluster }}"
