@@ -2,7 +2,6 @@
 - name: ontap
   hosts: ansible 
   gather_facts: no
-  connection: local
   collections:
     - netapp.ontap
   vars:
