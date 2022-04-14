@@ -3,6 +3,7 @@
   collections: 
   - netapp.ontap
   gather_facts: false
+  https: true
   vars:
     hostname: "{{ hostname }}"
     username: "{{ username }}"
