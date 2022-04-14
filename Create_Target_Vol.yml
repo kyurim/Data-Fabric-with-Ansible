@@ -1,6 +1,6 @@
 ---
 - name: ontap
-  hosts: localhost 
+  hosts: ansible 
   gather_facts: no
   connection: local
   vars:
