@@ -2,7 +2,6 @@
 - hosts: ansible 
   name: ontap snapmirror
   gather_facts: false
-  connection: local
   vars:
     hostname: "{{ hostname }}"
     username: "{{ username }}"
