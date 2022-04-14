@@ -8,6 +8,7 @@
     username: "{{ username }}"
     password: "{{ password }}"
     dest_hostname: "{{ dest_hostname }}"
+    dest_password: "{{ dest_password }}"
     source_cluster_name: "{{ source_cluster_name }}"
     dest_cluster_name: "{{ dest_cluster_name }}"
     source_intercluster_lif: "{{ source_intercluster_lif }}"
@@ -26,7 +27,7 @@
       username: "{{ username }}"
       password: "{{ password }}"
       dest_username: admin 
-      dest_password: Netapp123
+      dest_password: "{{dest_password}}"
       source_cluster_name: "{{ source_cluster_name }}" 
       dest_cluster_name: "{{ dest_cluster_name }}"
       dest_hostname: "{{ dest_hostname }}"
