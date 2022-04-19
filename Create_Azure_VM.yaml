@@ -1,0 +1,21 @@
+---
+- name: Create Azure VM
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Create VM
+    azure_rm_virtualmachine:
+      resource_group: Junior_training
+      name: test_vm_01
+      vm_size: Standard_DS1_v2
+      admin_username: student01@ssw79379hotmail.onmicrosoft.com
+      ssh_password_enabled: false
+      ssh_public_keys:
+        - path: /home/azureuser/.ssh/authorized_keys
+          key_data: "<key_data>"
+      #network_interfaces: cvo_nic1
+      image:
+        offer: CentOS
+        publisher: OpenLogic
+        sku: '7.5'
+        version: latest
