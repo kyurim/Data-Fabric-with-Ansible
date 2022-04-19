@@ -1,10 +1,11 @@
 ---
 - name: Create Azure VM
   hosts: ansible
+  collections: azure.azcollection
   #connection: local
   tasks:
   - name: Create VM
-    azure.azcollection.azure_rm_virtualmachine:
+    azure_rm_virtualmachine:
       resource_group: Junior_training
       name: test_vm_01
       vm_size: Standard_DS1_v2
