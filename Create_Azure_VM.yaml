@@ -1,7 +1,7 @@
 ---
 - name: Create Azure VM
   hosts: ansible
-  connection: local
+  #connection: local
   tasks:
   - name: Create VM
     azure_rm_virtualmachine:
