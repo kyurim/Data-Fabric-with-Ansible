@@ -1,7 +1,8 @@
 ---
 - name: Create Azure VM
   hosts: ansible
-  collections: azure.azcollection
+  collections: 
+  - azure.azcollection
   #connection: local
   tasks:
   - name: Create VM
