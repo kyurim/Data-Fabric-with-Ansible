@@ -6,6 +6,20 @@
   gather_facts: false
   connection: local
   tasks:
+  - name: Create Public IP address
+    azure_rm_publicipaddress:
+      resource_group: Junior_training
+      allocation_method: Static
+      name: newVMIP
+    register: output_ip_address
+  - name: Create Network Interfaces
+    azure_rm_networkinterface:
+      resource_group: Junior_training
+      name: "{{new_vm_NIC}}"
+      virtual_network: junior_training_vnet
+      subnet: default
+      public_ip_name: newVMIP
+      security_group: {{"new_vm_security_group"}}
   - name: Create VM
     azure_rm_virtualmachine:
       resource_group: Junior_training
@@ -13,6 +27,7 @@
       vm_size: Standard_E4s_v3
       admin_username: "{{admin_username}}"
       admin_password: "{{admin_password}}"
+      network_interfaces: "{{new_vm_NIC}}"
       #subscription_id: 3a49f80b-be29-4847-9d66-724a67d9f3d4
       #ssh_password_enabled: false
       #ssh_public_keys:
