@@ -1,7 +1,7 @@
 ---
 - name: Create Azure volume Clone
-  hosts: localhost
-  connection: local
+  hosts: ansible
+  #connection: local
   gather_facts: false
   collections:
   - azure.azcollection
