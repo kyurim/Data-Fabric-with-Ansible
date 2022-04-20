@@ -10,7 +10,7 @@
      state: directory
 
   - name: mount nfs vol
-    mount:
+    ansible.posix.mount:
       state: mounted
       path: /mnt/test
       src: 172.18.0.9:/target_vol_clone
