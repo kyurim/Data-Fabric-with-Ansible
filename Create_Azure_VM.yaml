@@ -3,6 +3,7 @@
   hosts: ansible
   collections: 
   - azure.azcollection
+  gather_facts: false
   #connection: local
   tasks:
   - name: Create VM
