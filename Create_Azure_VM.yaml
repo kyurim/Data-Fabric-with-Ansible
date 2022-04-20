@@ -15,7 +15,7 @@
       ssh_password_enabled: false
       ssh_public_keys:
         - path: /home/azureuser/.ssh/authorized_keys
-          key_data: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDP/qthY0cdfuj1rInlO1BKpcJeHGimUoYuLMBc82FzU7jVMxWsIJcp1Bx44pGPKGrOK9LFknTf9mwzv1Q+594eSE40Ehl3F2o8Q/IVSLh48zeDA6o3me1LSFQvYnrmR/EX341DQl3WGXJu5BlkQADLkWRyN3fb0ZHIti2lYyQImcKXNzaXgJCXD6ly4EPszA4BZ1JiUFNGx25apujtmJzFbBZi7t4kmkCt3WQpM192fCO/r3twc2MGuXiaUiCJ1775mKV3GhUxOsVSb8+eADTf4yeekaupzLP+6Vov8cdJjNZeJ0SFXvBSWCxLTt85dtC8arFpC48kPORY840oFSRtO0O+Jh3rcnwSZFcMI3FBoRJVHGwD5LP9GGWM+iS8kEGudZegc+kEh3crGvfi8DKU3BnKD6rk1xapQs4j9cd/VPIyPDb7fN3NHGHle1idfzYcNZ00c7pKqZdDt5Yh/SQ0Ar2Fga/72/UNNgfAJKwemYeyEHLT1joDUj44AmP8zok= generated-by-azure"
+          key_data: "<key_data>"
       #network_interfaces: cvo_nic1
       image:
         offer: CentOS
