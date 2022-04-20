@@ -10,7 +10,7 @@
      state: directory
 
   - name: mount nfs vol
-    mount:
+    ansible.posix.mount:
       state: mounted
       path: /mnt/test
       src: 115.144.174.92:/ans_demo_vol1

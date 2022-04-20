@@ -24,4 +24,7 @@ ansible_python_interpreter=/usr/bin/python3
 #115.144.174.94 ansible_ssh_user=root 
 115.144.174.37 ansible_ssh_user=root
 
+[azure]
+20.196.203.209
+
 # End of Hosts
