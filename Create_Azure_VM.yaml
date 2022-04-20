@@ -13,9 +13,9 @@
       vm_size: Standard_DS1_v2
       admin_username: student01@ssw79379hotmail.onmicrosoft.com
       ssh_password_enabled: false
-      ssh_public_keys:
-        - path: /home/azureuser/.ssh/authorized_keys
-          key_data: "<key_data>"
+      #ssh_public_keys:
+      #  - path: /home/azureuser/.ssh/authorized_keys
+      #    key_data: "<key_data>"
       #network_interfaces: cvo_nic1
       image:
         offer: CentOS
