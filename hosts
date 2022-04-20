@@ -26,5 +26,4 @@ ansible_python_interpreter=/usr/bin/python3
 
 [azure]
 20.196.203.209
-
 # End of Hosts
