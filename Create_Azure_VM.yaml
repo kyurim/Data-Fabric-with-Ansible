@@ -1,10 +1,10 @@
 ---
 - name: Create Azure VM
-  hosts: ansible
+  hosts: localhost
   collections: 
   - azure.azcollection
   gather_facts: false
-  #connection: local
+  connection: local
   tasks:
   - name: Create VM
     azure_rm_virtualmachine:
