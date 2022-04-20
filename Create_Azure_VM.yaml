@@ -12,7 +12,7 @@
       name: testVM01
       vm_size: Standard_DS1_v2
       admin_username: student01@ssw79379hotmail.onmicrosoft.com
-      admin_password: {{'admin_password'}}
+      admin_password: "{{admin_password}}"
       #ssh_password_enabled: false
       #ssh_public_keys:
       #  - path: /home/azureuser/.ssh/authorized_keys
