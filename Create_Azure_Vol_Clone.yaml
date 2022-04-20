@@ -4,8 +4,7 @@
   connection: local
   gather_facts: false
   collections:
-  	- azure.azcollection
-
+  - azure.azcollection
   tasks:
   - name: create snapshot
     na_ontap_snapshot:
