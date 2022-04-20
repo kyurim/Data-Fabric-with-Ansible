@@ -23,7 +23,7 @@
       size_unit: gb
       policy: default
 #      junction_path: "/{{ vol_name }}"
-      type: DP
+      type: RW
       hostname: "{{ hostname }}"
       username: "{{ username }}"
       password: "{{ password }}"
