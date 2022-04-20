@@ -1,4 +1,4 @@
----- 
+---
  hosts: 20.196.203.209
   tasks:
   - name: install nfs client
