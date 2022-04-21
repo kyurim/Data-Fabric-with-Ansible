@@ -12,7 +12,7 @@
      username: "{{ username }}"
      password: "{{ password }}"
      esxi_hostname: "{{ esxi_hostname }}"
-     datacenter: "{{ datacenter }}"
+     #datacenter: "{{ datacenter }}"
      folder: "{{ folder }}"
      name: "{{ vm_name }}"
      state: poweredon
