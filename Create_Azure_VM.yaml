@@ -10,7 +10,7 @@
     azure_rm_publicipaddress:
       resource_group: Junior_training
       allocation_method: Static
-      name: newVMIP2
+      name: "{{new_ip_name}}"
     register: output_ip_address
   - name: Public IP of VM
     debug:
@@ -21,7 +21,7 @@
       name: "{{new_vm}}_NIC"
       virtual_network: junior_training_vnet
       subnet: default
-      public_ip_name: newVMIP2
+      public_ip_name: "{{new_ip_name}}"
       security_group: "{{new_vm}}_SG"
   - name: Create VM
     azure_rm_virtualmachine:
