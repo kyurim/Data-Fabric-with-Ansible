@@ -6,6 +6,16 @@
   collections:
   - azure.azcollection
   tasks:
+  - name: create snapshot
+    na_ontap_snapshot:
+       state: present
+       snapshot: "{{ snapshot_name }}"
+       volume: "{{ parent_volume }}"
+       comment: "Create snapshot of {{ parent_volume }}"
+       vserver: "{{ vserver_name }}"
+       username: "{{ username }}"
+       password: "{{ password }}"
+       hostname: "{{ hostname }}"
   - name: create flexclone
     na_ontap_volume_clone:
         state: present
@@ -15,5 +25,5 @@
         vserver: "{{ vserver_name }}"
         parent_volume: "{{ parent_volume }}"
         volume: "{{ clone_name }}"
-        #parent_snapshot: "{{ snapshot_name }}"
+        parent_snapshot: "{{ snapshot_name }}"
         junction_path: "/{{ clone_name}}"
