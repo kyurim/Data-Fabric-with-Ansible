@@ -21,7 +21,7 @@
       aggregate_name: "{{ aggr }}"
       size: 15 
       size_unit: gb
-      policy: default
+      policy: export-svm_azurecvo
       #junction_path: "/{{ vol_name }}"
       type: DP
       hostname: "{{ hostname }}"
