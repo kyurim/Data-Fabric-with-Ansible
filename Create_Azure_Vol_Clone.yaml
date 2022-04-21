@@ -15,5 +15,5 @@
         vserver: "{{ vserver_name }}"
         parent_volume: "{{ parent_volume }}"
         volume: "{{ clone_name }}"
-        parent_snapshot: "{{ snapshot_name }}"
+        #parent_snapshot: "{{ snapshot_name }}"
         junction_path: "/{{ clone_name}}"
