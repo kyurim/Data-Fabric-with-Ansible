@@ -1,8 +1,5 @@
 ---
 - hosts: 20.214.111.44
-  name: install nfs and mount volume
-  become: yes
-  become_method: sudo
   tasks:
   - name: install nfs client
     yum: name=nfs-utils state=present
