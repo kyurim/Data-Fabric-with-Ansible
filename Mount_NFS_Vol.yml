@@ -1,5 +1,5 @@
 ---
-- hosts: 115.144.174.37
+- hosts: 115.144.174.91
   tasks:
   - name: install nfs client
     yum: name=nfs-utils state=present
@@ -13,5 +13,5 @@
     ansible.posix.mount:
       state: mounted
       path: /mnt/test
-      src: 115.144.174.92:/ans_demo_vol1
+      src: 115.144.174.95:/ansible_onprem_vol1
       fstype: nfs
