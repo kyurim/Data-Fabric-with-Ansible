@@ -31,7 +31,7 @@
       admin_username: "{{admin_username}}"
       admin_password: "{{admin_password}}"
       network_interfaces: "{{new_vm}}_NIC"
-      public_ip_allocation_method: static
+      public_ip_allocation_method: Static
       #subscription_id: 3a49f80b-be29-4847-9d66-724a67d9f3d4
       #ssh_password_enabled: false
       #ssh_public_keys:
