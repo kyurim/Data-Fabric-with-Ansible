@@ -21,3 +21,5 @@
        destination_vserver: "{{ destination_vserver }}"
        source_volume: "{{ source_volume }}"
        destination_volume: "{{ destination_volume }}"
+       schedule: 5min
+       
