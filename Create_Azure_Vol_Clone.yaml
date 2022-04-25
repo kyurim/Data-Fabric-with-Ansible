@@ -15,5 +15,7 @@
         vserver: "{{ vserver_name }}"
         parent_volume: "{{ parent_volume }}"
         volume: "{{ clone_name }}"
+        policy: export-svm_azurecvo
         parent_snapshot: "{{ snapshot_name }}"
         junction_path: "/{{ clone_name}}"
+        
