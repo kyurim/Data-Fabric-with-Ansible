@@ -22,7 +22,7 @@ ansible_python_interpreter=/usr/bin/python3
 
 [autoVM]
 #115.144.174.94 ansible_ssh_user=root 
-115.144.174.92
+115.144.174.92 ansible_ssh_user=root ansible_ssh_pass=NetApp0118!
 
 [azure]
 20.196.203.209
