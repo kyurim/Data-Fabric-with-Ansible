@@ -31,8 +31,8 @@
        source_cluster_name: "{{ source_cluster_name }}" 
        dest_cluster_name: "{{ dest_cluster_name }}"
        dest_hostname: "{{ dest_hostname }}"
-       https: true
-       validate_certs: false
+       #https: true
+       #validate_certs: false
       
    - name: Source vserver peer create
      na_ontap_vserver_peer:
