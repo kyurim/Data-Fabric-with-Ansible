@@ -11,7 +11,7 @@
 # Add ONTAP Select Host information 
 
 [ontap]
-115.144.174.85 ansible_ssh_user=admin #ansible_ssh_pass ontap select cluster
+115.144.174.84 ansible_ssh_user=admin #ansible_ssh_pass ontap select cluster
 
 
 [control]
