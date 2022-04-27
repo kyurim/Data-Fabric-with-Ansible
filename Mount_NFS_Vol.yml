@@ -14,5 +14,5 @@
     mount:
       state: mounted
       path: /mnt/test
-      src: 115.144.174.86:/ansible_onprem_vol1
+      src: "{{volume_mount_path}}"
       fstype: nfs
