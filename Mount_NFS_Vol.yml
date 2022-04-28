@@ -7,12 +7,12 @@
 
   - name: verify mount directory
     file:
-     path: /mnt/final
+     path: /mnt/final2
      state: directory
 
   - name: mount nfs vol
     mount:
       state: mounted
-      path: /mnt/final
+      path: /mnt/final2
       src: 115.144.174.86:/ansible_onprem_vol2
       fstype: nfs
