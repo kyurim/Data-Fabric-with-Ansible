@@ -63,7 +63,7 @@
       client_match: 0.0.0.0/0
       ro_rule: any
       rw_rule: any
-      super_user_security: none
+      super_user_security: any
       <<: *login
 
 
