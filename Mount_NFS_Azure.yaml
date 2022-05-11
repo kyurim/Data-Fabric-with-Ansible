@@ -6,7 +6,7 @@
 
   - name: verify mount directory
     file:
-     path: /mnt/final
+     path: "{{mount_path}}"
      state: directory
 
   - name: mount nfs vol
