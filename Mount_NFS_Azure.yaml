@@ -1,5 +1,5 @@
 ---
-- hosts: 20.214.111.44
+- hosts: 20.249.4.174
   tasks:
   - name: install nfs client
     yum: name=nfs-utils state=present
