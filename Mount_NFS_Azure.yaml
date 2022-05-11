@@ -12,7 +12,7 @@
   - name: mount nfs vol
     mount:
       state: mounted
-      path: /mnt/final
+      path: "{{mount_path}}"
       src: 172.18.0.9:/peer_target_vol_clone
       fstype: nfs
 
